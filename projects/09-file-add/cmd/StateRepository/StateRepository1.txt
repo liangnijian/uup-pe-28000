@@ -1,0 +1,11 @@
+#26100.4061资源管理器依赖
+Windows\System32\zh-CN\Windows.StateRepository.dll.mui
+Windows\System32\mdmregistration.dll
+Windows\System32\StateRepository.Core.dll
+Windows\System32\SystemSettings.DataModel.dll
+Windows\System32\Windows.StateRepository.dll
+Windows\System32\Windows.StateRepositoryBroker.dll
+Windows\System32\Windows.StateRepositoryClient.dll
+Windows\System32\Windows.StateRepositoryCore.dll
+Windows\System32\Windows.StateRepositoryPS.dll
+Windows\System32\Windows.StateRepositoryUpgrade.dll

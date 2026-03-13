@@ -1,0 +1,158 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Classes\Directory\background\shell\cmd]
+"HideBasedOnVelocityId"=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Classes\Directory\background\shell\Powershell]
+"ShowBasedOnVelocityId"=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Classes\Directory\shell\cmd]
+"HideBasedOnVelocityId"=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Classes\Directory\shell\Powershell]
+"ShowBasedOnVelocityId"=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Classes\Drive\shell\cmd]
+"HideBasedOnVelocityId"=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Classes\Drive\shell\Powershell]
+"ShowBasedOnVelocityId"=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Classes\Launcher.AllAppsDesktopApplication]
+@=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Classes\Launcher.Computer]
+@=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Classes\Launcher.DesktopPackagedApplication]
+@=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Classes\Launcher.ImmersiveApplication]
+@=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Classes\Launcher.SystemSettings]
+@=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Classes\Microsoft.Website]
+@=-
+"EditFlags"=-
+"FriendlyTypeName"=-
+"IsShortcut"=-
+"NeverShowExt"=-
+"NoOpenWith"=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Classes\MSILink\shellex\ContextMenuHandlers]
+@=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Classes\OpenSearchProvider]
+"ContentViewModeForBrowse"=-
+"ContentViewModeForSearch"=-
+"ContentViewModeLayoutPatternForBrowse"=-
+"ContentViewModeLayoutPatternForSearch"=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Classes\Printers]
+"InfoTip"=-
+"PreviewDetails"=-
+"TileInfo"=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Microsoft\Cryptography\OID\EncodingType 0\CryptDllFindLocalizedName\LocalizedNames]
+"OemEsim"=-
+"PasspointTrustedRoots"=-
+"Remote Desktop"=-
+"TrustedDevices"=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Microsoft\NetSh]
+"authfwcfg"=-
+"dot3cfg"=-
+"fwcfg"=-
+"hnetmon"=-
+"netprofm"=-
+"nettrace"=-
+"nshhttp"=-
+"nshipsec"=-
+"p2pnetsh"=-
+"peerdistsh"=-
+"rpc"=-
+"whhelper"=-
+"wwancfg"=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Microsoft\Rpc\Extensions]
+"RemoteRpcHttpDll"=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Microsoft\Rpc\SecurityService]
+"14"=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Microsoft\Windows\CurrentVersion\App Management\WindowsFeatureCategories]
+"COMMONSTART/Programs/Accessories/System Tools/Backup.lnk"=-
+"COMMONSTART/Programs/Accessories/Windows Media Player.lnk"=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\0]
+"2001"=-
+"2004"=-
+"2007"=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoToolbarsOnTaskbar"=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"SynchronousMachineGroupPolicy"=-
+"SynchronousUserGroupPolicy"=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Microsoft\Windows\CurrentVersion\PreviewHandlers]
+"{031EE060-67BC-460d-8847-E4A7C5E45A27}"=-
+"{13D3C4B8-B179-4ebb-BF62-F704173E7448}"=-
+"{53BEDF0B-4E5B-4183-8DC9-B844344FA104}"=-
+"{8a7cae0e-5951-49cb-bf20-ab3fa1e44b01}"=-
+"{E64164EB-1AE0-4C50-BAEF-A413C2B3A4BC}"=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Approved]
+"{08165EA0-E946-11CF-9C87-00AA005127ED}"=-
+"{09A47860-11B0-4DA5-AFA5-26D86198A780}"=-
+"{0F8604A5-4ECE-4DE1-BA7D-CF10F8AA4F48}"=-
+"{13D3C4B8-B179-4ebb-BF62-F704173E7448}"=-
+"{16C2C29D-0E5F-45f3-A445-03E03F587B7D}"=-
+"{289AF617-1CC3-42A6-926C-E6A863F0E3BA}"=-
+"{3DBEE9A1-C471-4B95-BBCA-F39310064458}"=-
+"{4F58F63F-244B-4c07-B29F-210BE59BE9B4}"=-
+"{60254CA5-953B-11CF-8C96-00AA00B8708C}"=-
+"{7D559C10-9FE9-11d0-93F7-00AA0059CE02}"=-
+"{7FC0B86E-5FA7-11d1-BC7C-00C04FD929DB}"=-
+"{8082C5E6-4C27-48ec-A809-B8E1122E8F97}"=-
+"{ABBE31D0-6DAE-11D0-BECA-00C04FD940BE}"=-
+"{CF67796C-F57F-45F8-92FB-AD698826C602}"=-
+"{E6FB5E20-DE35-11CF-9C87-00AA005127ED}"=-
+"{F5175861-2688-11d0-9C5E-00AA00A45957}"=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Microsoft\Windows\CurrentVersion\UserPictureChange]
+"Me Contact"=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Microsoft\Windows NT\CurrentVersion\Console\TrueTypeFont]
+"932"=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Microsoft\Windows NT\CurrentVersion\Drivers32]
+"aux"=-
+"midi"=-
+"midimapper"=-
+"mixer"=-
+"msacm.l3acm"="X:\\Windows\\System32\\l3codeca.acm"
+"vidc.i420"=-
+"vidc.iyuv"=-
+"vidc.mrle"=-
+"vidc.msvc"=-
+"vidc.uyvy"=-
+"vidc.yuy2"=-
+"vidc.yvu9"=-
+"vidc.yvyu"=-
+"wave"=-
+"wavemapper"=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts]
+"Times New Roman (True Type)"=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Microsoft\Windows NT\CurrentVersion\IniFileMapping\win.ini]
+"CLOCK"=-
+"COLORS"=-
+"CONSOLE"=-
+"CURSORS"=-
+"DESKTOP"=-
+"Devices"=-
+"EMBEDDING"=-
+"EXTENSIONS"=-
+"GRE_INITIALIZE"=-
+"IOPROCS"=-
+"MCI EXTENSIONS"=-
+"MODULECOMPATIBILITY"=-
+"MSCHARMAP"=-
+"NET_FILES"=-
+"NWCS"=-
+"Ports"=-
+"PrinterPorts"=-
+"SOUNDS"=-
+"TRUETYPE"=-
+"TWAIN"=-
+"WINDOWS HELP"=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Microsoft\Windows NT\CurrentVersion\IniFileMapping\win.ini\Windows]
+@=-
+"APPINIT_DLLS"=-
+"DEFAULTSEPARATEVDM"=-
+"DEVICENOTSELECTEDTIMEOUT"=-
+"Spooler"=-
+"SWAPDISK"=-
+"TRANSMISSIONRETRYTIMEOUT"=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon]
+"EnableSIHostIntegration"=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings]
+"CallLegacyWCMPolicies"=-
+[HKEY_LOCAL_MACHINE\Tmp_SOFTWARE\Microsoft\Windows\CurrentVersion\BitLocker]
+"BitLockerDiscoveryVolumeVersion"=-

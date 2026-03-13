@@ -1,0 +1,6 @@
+HKLM\Software\Microsoft\PolicyManager\default\Education
+HKLM\Software\Microsoft\Windows\CurrentVersion\AppModel\StateRepository
+HKLM\Software\Microsoft\Windows\CurrentVersion\Appx
+HKLM\Software\Microsoft\WindowsRuntime\ActivatableClassID\Windows.Internal.System.Profile.RegionPolicyEvaluator
+HKLM\Software\Microsoft\WindowsRuntime\Server\StateRepository
+HKLM\SYSTEM\ControlSet001\Services\StateRepository

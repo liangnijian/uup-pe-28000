@@ -1,0 +1,25 @@
+name: 制作 28000 pe
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: 整合 uup
+        run: .\uup-iso.cmd
+        shell: cmd
+
+      - name: 制作 WinPE
+        run: .\pe-make.cmd
+        shell: cmd
+
+      - name: 上传 wim
+        uses: actions/upload-artifact@v4
+        with:
+          name: WinPE
+          path: "*.wim"
+          if-no-files-found: error

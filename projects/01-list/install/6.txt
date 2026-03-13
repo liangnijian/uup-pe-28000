@@ -1,0 +1,10 @@
+#BitLocker解锁
+Windows\System32\zh-CN\bdeunlock.exe.mui
+Windows\System32\zh-CN\fveui.dll.mui
+Windows\System32\zh-CN\Windows.Storage.Search.dll.mui
+Windows\System32\bdeui.dll
+Windows\System32\bdeunlock.exe
+Windows\System32\fveapi.dll
+Windows\System32\fvecerts.dll
+Windows\System32\fveui.dll
+Windows\System32\Windows.Storage.Search.dll

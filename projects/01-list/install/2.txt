@@ -1,0 +1,17 @@
+#22621依赖
+Windows\System32\CodeIntegrity\driversipolicy.p7b
+Windows\System32\zh-CN\Windows.Web.dll.mui
+#Windows\System32\win32ksgd.sys
+Windows\System32\Windows.UI.Core.TextInput.dll
+Windows\System32\Windows.Web.dll
+
+#22361.3447开始，任务管理器依赖
+Windows\System32\TaskManagerDataLayer.dll
+
+#任务栏输入法
+Windows\System32\CorePrivacySettingsStore.dll
+Windows\System32\InputLocaleManager.dll
+Windows\System32\InputService.dll
+Windows\System32\MTF.dll
+Windows\System32\MTFServer.dll
+Windows\System32\TextInputMethodFormatter.dll
