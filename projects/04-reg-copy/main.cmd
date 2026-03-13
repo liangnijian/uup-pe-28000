@@ -17,4 +17,3 @@ for %%a in ("%cd%\SYSTEM\*.txt") do (
 echo 处理当前版本
 call RegDel /-s "HKLM\Software\Microsoft\Windows NT\CurrentVersion"
 call RegCopy /-s "HKLM\Software\Microsoft\Windows NT\CurrentVersion"
-goto :EOF
