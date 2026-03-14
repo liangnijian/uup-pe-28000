@@ -4,20 +4,15 @@ setlocal enabledelayedexpansion
 cd /d "%~dp0"
 set "PATH=%cd%\bin;%PATH%"
 
-set lang=zh-cn
-set start-time=%time%
-
 if exist "%~dp0uup_file" rd /s /q "%~dp0uup_file"
 md "%~dp0uup_file"
-for /f "tokens=1,2 delims= " %%a in (%~dp0version.txt) do (
-	cls
-	echo 准备整合 %%a %%b
-	rem timeout /t 10 /nobreak
-	ping -n 10 127.0.0.1>>nul
-	set arch=%%b
-	call :start %%a
-)
-cls
+
+set sysver=28000
+set arch=amd64
+set lang=zh-cn
+set start-time=%time%
+call :start %sysver%
+
 echo 完成
 echo 开始时间：%start-time%
 echo 结束时间：%time%
