@@ -18,8 +18,7 @@ jobs:
         shell: cmd
 
       - name: 上传 wim
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: WinPE
           path: "*.wim"
-          if-no-files-found: error
