@@ -1,0 +1,20 @@
+name: 整合 uup 镜像
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: 整合 uup
+        run: .\uup-iso.cmd
+        shell: cmd
+
+      - name: 上传 iso
+        uses: actions/upload-artifact@v6
+        with:
+          name: iso
+          path: "*.iso"
