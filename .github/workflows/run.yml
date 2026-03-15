@@ -1,4 +1,4 @@
-name: 整合 uup 镜像
+name: 运行
 
 on:
   workflow_dispatch:
@@ -18,3 +18,13 @@ jobs:
         with:
           name: iso
           path: "*.iso"
+
+      - name: 制作 WinPE
+        run: .\pe-make.cmd
+        shell: cmd
+
+      - name: 上传 wim
+        uses: actions/upload-artifact@v6
+        with:
+          name: WinPE
+          path: "*.wim"

@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v6
 
       - name: 整合 uup
-        run: .\uup-iso.cmd
+        run: .\auto-run.cmd uup
         shell: cmd
 
       - name: 上传 iso
@@ -20,7 +20,7 @@ jobs:
           path: "*.iso"
 
       - name: 制作 WinPE
-        run: .\pe-make.cmd
+        run: .\auto-run.cmd pe
         shell: cmd
 
       - name: 上传 wim
