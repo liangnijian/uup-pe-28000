@@ -1,0 +1,26 @@
+name: 自动运行
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: 自动运行
+        run: .\auto-run.cmd
+        shell: cmd
+
+      - name: 上传 iso
+        uses: actions/upload-artifact@v6
+        with:
+          name: iso
+          path: "*.iso"
+
+      - name: 上传 wim
+        uses: actions/upload-artifact@v6
+        with:
+          name: WinPE
+          path: "*.wim"
