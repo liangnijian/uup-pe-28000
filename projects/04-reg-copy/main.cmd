@@ -17,3 +17,10 @@ for %%a in ("%cd%\SYSTEM\*.txt") do (
 echo 处理当前版本
 call RegDel /-s "HKLM\Software\Microsoft\Windows NT\CurrentVersion"
 call RegCopy /-s "HKLM\Software\Microsoft\Windows NT\CurrentVersion"
+
+echo 替换必要的注册表项目
+regfind.exe -p HKEY_LOCAL_MACHINE\Tmp_SOFTWARE -y C:\ -y -r X:\ > nul 2>&1
+regfind.exe -p HKEY_LOCAL_MACHINE\Tmp_SOFTWARE -y D:\ -y -r X:\ > nul 2>&1
+regfind.exe -p HKEY_LOCAL_MACHINE\Tmp_SOFTWARE -y Interactive User -r > nul 2>&1
+regfind.exe -p HKEY_LOCAL_MACHINE\Tmp_SOFTWARE -y  X:\$windows.~bt\ -r  X:\ > nul 2>&1
+regfind.exe -p HKEY_LOCAL_MACHINE\Tmp_SYSTEM -y  X:\$windows.~bt\ -r  X:\ > nul 2>&1
