@@ -16,17 +16,19 @@ jobs:
         shell: cmd
 
       - name: 上传 iso
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: iso
           path: "*.iso"
+          archive: false
 
       - name: 制作 WinPE
         run: .\auto-run.cmd pe
         shell: cmd
 
       - name: 上传 wim
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: WinPE
           path: "*.wim"
+          archive: false
