@@ -1,7 +1,0 @@
-Windows Registry Editor Version 5.00
-
-[-HKEY_LOCAL_MACHINE\Tmp_SYSTEM\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\RestrictedServices\Static\System]
-"Audiosrv-1"=-
-"Audiosrv-2"=-
-"AVEndpointBuilder-1"=-
-"AVEndpointBuilder-2"=-
