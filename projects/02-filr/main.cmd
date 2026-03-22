@@ -1,5 +1,5 @@
 for %%a in ("%cd%\7z\*.7z") do (
-	echo 解压 7z 中的 %%~nxa
+	echo 解压 %%~nxa
 	7z.exe  x "%%a" -y -o"%X%" >nul
 )
 

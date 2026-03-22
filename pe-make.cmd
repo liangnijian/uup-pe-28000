@@ -8,7 +8,7 @@ set "PATH=%cd%\cmd;%PATH%"
 
 rem 提取wim
 if exist "%cd%\sources\" rd /s /q "%cd%\sources"
-for %%i in (%cd%\*.iso) do 7z.exe x "%%i" "sources\boot.wim" "sources\install.wim" -o"%cd%"
+for %%i in (%cd%\*.iso) do 7z.exe x "%%i" "sources\boot.wim" "sources\install.wim" -o"%cd%">>nul
 
 set roll=2
 set wim=%cd%\sources\boot.wim

@@ -57,9 +57,7 @@ Windows\System32\CatRoot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\Microsoft-Window
 Windows\System32\CatRoot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\Microsoft-Windows-Client-Desktop-Required-WOW64-Package00~*~amd64~~*.*.*.*.cat
 Windows\System32\CatRoot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\Microsoft-Windows-Client-Desktop-Required-WOW64-Package~*~amd64~~*.*.*.*.cat
 Windows\System32\CodeIntegrity\driver.stl
-Windows\System32\drivers\monitor.sys
 Windows\System32\drivers\WindowsTrustedRT.sys
-Windows\System32\drivers\winusb.sys
 Windows\System32\zh-CN\aclui.dll.mui
 Windows\System32\zh-CN\activeds.dll.mui
 Windows\System32\zh-CN\advapi32.dll.mui

@@ -19,16 +19,16 @@ goto :EOF
 
 :run
 set "shellstyle=%~1"
-ResHacker.exe -open "%X%\%shellstyle%" -save "%S%\yczzl1.txt" -action extract -mask UIFILE,1, -log
-for /f "delims=" %%i in (%S%\yczzl1.txt) do (
+ResHacker.exe -open "%X%\%shellstyle%" -save "%S%\隐藏组织栏1.txt" -action extract -mask UIFILE,1, -log
+for /f "delims=" %%i in (%S%\隐藏组织栏1.txt) do (
 	set "content=%%i"
-	echo !content!>>"%S%\yczzl2.txt"
+	echo !content!>>"%S%\隐藏组织栏2.txt"
 	if "style resid="FolderBandStyle""=="!content:~1,-2!" (
-		echo ^<Element padding="rect(0rp,0rp,0rp,-31rp)"/^> >>"%S%\yczzl2.txt"
-		echo. >>"%S%\yczzl2.txt"
+		echo ^<Element padding="rect(0rp,0rp,0rp,-31rp)"/^> >>"%S%\隐藏组织栏2.txt"
+		echo. >>"%S%\隐藏组织栏2.txt"
 	)
 )
-ResHacker.exe -open "%X%\%shellstyle%" -save "%X%\%shellstyle%" -action addoverwrite -res "%S%\yczzl2.txt" -mask UIFILE,1, -log
-del /q "%S%\yczzl1.txt"
-del /q "%S%\yczzl2.txt"
+ResHacker.exe -open "%X%\%shellstyle%" -save "%X%\%shellstyle%" -action addoverwrite -res "%S%\隐藏组织栏2.txt" -mask UIFILE,1, -log
+del /q "%S%\隐藏组织栏1.txt"
+del /q "%S%\隐藏组织栏2.txt"
 goto :EOF

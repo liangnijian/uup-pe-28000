@@ -15,22 +15,30 @@ for %%a in ("%cd%\inf\*.txt") do (
 	echo 处理 %%~nxa
 	for /f "delims=" %%b in (%%a) do (
 		echo 复制 %%b
-		wimlib-imagex.exe extract "%install%" %installinfo% "\Windows\INF\%%b" --dest-dir="%X%\Windows\INF" --nullglob --no-acls>>nul 2>&1
-		wimlib-imagex.exe extract "%install%" %installinfo% "\Windows\System32\DriverStore\FileRepository\%%b*" --dest-dir="%X%\Windows\System32\DriverStore\FileRepository" --nullglob --no-acls>>nul 2>&1
-		wimlib-imagex.exe extract "%install%" %installinfo% "\Windows\System32\DriverStore\zh-CN\%%b*" --dest-dir="%X%\Windows\System32\DriverStore\zh-CN" --nullglob --no-acls>>nul 2>&1
-
-		call RegCopy "HKLM\DRIVERS\DriverDatabase\DriverInfFiles\%%b">>nul 2>&1
-		call RegCopy HKLM\DRIVERS\DriverDatabase\DriverPackages,%%b*>>nul 2>&1
-		call RegCopy "HKLM\SYSTEM\DriverDatabase\DriverInfFiles\%%b">>nul 2>&1
-		call RegCopy HKLM\SYSTEM\DriverDatabase\DriverPackages,%%b*>>nul 2>&1
-
-		if "%%b"=="monitor.inf" call RegCopy "HKLM\DRIVERS\DriverDatabase\DeviceIds\Monitor">>nul 2>&1
-		if not "%%b"=="monitor.inf" (
-			for /f "delims=" %%c in ('reg query "HKLM\Src_DRIVERS\DriverDatabase\DeviceIds" /s /f "%%b" ^|findstr /i "DriverDatabase\DeviceIds"') do (
-				set DRIVERS_N=%%c
-				set DRIVERS_N=!DRIVERS_N:HKEY_LOCAL_MACHINE\Src_=HKLM\!
-				call RegCopy "!DRIVERS_N!">>nul 2>&1
-			)
-		)
+		call :DriverDatabase "%%b">>nul 2>&1
 	)
 )
+goto :EOF
+
+:DriverDatabase
+set ddf=%~1
+wimlib-imagex.exe extract "%install%" %installinfo% "\Windows\INF\%ddf%" --dest-dir="%X%\Windows\INF" --nullglob --no-acls
+wimlib-imagex.exe extract "%install%" %installinfo% "\Windows\System32\DriverStore\FileRepository\%ddf%*" --dest-dir="%X%\Windows\System32\DriverStore\FileRepository" --nullglob --no-acls
+wimlib-imagex.exe extract "%install%" %installinfo% "\Windows\System32\DriverStore\zh-CN\%ddf%*" --dest-dir="%X%\Windows\System32\DriverStore\zh-CN" --nullglob --no-acls
+
+for %%c in (%ddf%) do wimlib-imagex.exe extract "%install%" %installinfo% "\Windows\System32\drivers\%%~nc.sys" --dest-dir="%X%\Windows\System32\drivers" --nullglob --no-acls
+
+call RegCopy "HKLM\DRIVERS\DriverDatabase\DriverInfFiles\%ddf%"
+call RegCopy HKLM\DRIVERS\DriverDatabase\DriverPackages,%ddf%*
+call RegCopy "HKLM\SYSTEM\DriverDatabase\DriverInfFiles\%ddf%"
+call RegCopy HKLM\SYSTEM\DriverDatabase\DriverPackages,%ddf%*
+
+if "%ddf%"=="monitor.inf" call RegCopy "HKLM\DRIVERS\DriverDatabase\DeviceIds\Monitor"
+if not "%ddf%"=="monitor.inf" (
+	for /f "delims=" %%c in ('reg query "HKLM\Src_DRIVERS\DriverDatabase\DeviceIds" /s /f "%ddf%" ^|findstr /i "DriverDatabase\DeviceIds"') do (
+		set DRIVERS_N=%%c
+		set DRIVERS_N=!DRIVERS_N:HKEY_LOCAL_MACHINE\Src_=HKLM\!
+		call RegCopy "!DRIVERS_N!">>nul 2>&1
+	)
+)
+goto :EOF

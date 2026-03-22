@@ -1,1 +1,1 @@
-for %%a in ("%cd%\cmd\*.cmd") do call "%%a"
+for %%i in ("%cd%\cmd\*.cmd") do call "%%i"
